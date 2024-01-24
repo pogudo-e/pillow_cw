@@ -3,6 +3,9 @@ from CodeWars import CodeWars
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 
+# TODO: исправить ошибки рисования
+
+
 app = FastAPI()
 
 

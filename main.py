@@ -1,17 +1,13 @@
 import os
 import time
 
-from CodeWars import CodeWars
-
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-# TODO: исправить ошибки рисования
-
+from controller import Controller
 
 app = FastAPI()
-
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
@@ -25,9 +21,6 @@ async def favicon():
 @app.get("/name/{user_name}")
 def root(user_name: str):
     time.sleep(2)
-    test = CodeWars(f'{user_name}')
-    test.parse()
-    print(test)
-    test.draw()
-    del test
+    user = Controller(user_name)
+    user.paint()
     return FileResponse('./src/output/canvas.png')

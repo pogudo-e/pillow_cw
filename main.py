@@ -10,12 +10,20 @@ from controller import Controller
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/src", StaticFiles(directory="src"), name="output")
 
 
 @app.get('/favicon.ico')
 async def favicon():
     file_name = "favicon.ico"
     file_path = os.path.join("static", file_name)
+    return FileResponse(path=file_path, headers={"Content-Disposition": "attachment; filename=" + file_name})
+
+
+@app.get('/src/output/canvas.png')
+async def preview():
+    file_name = "/src/output/canvas.png"
+    file_path = os.path.join("output", file_name)
     return FileResponse(path=file_path, headers={"Content-Disposition": "attachment; filename=" + file_name})
 
 

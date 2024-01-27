@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Pillow CodeWars</title>
+    <meta charset="utf-8">
+    <!-- Подключение Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/20c2947f91.js" crossorigin="anonymous"></script>
+    <style>
+        /* Создание контейнера, который будет занимать всю высоту страницы */
+        .full-height {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container mt-4 bg-white rounded p-3 shadow">
+    <div class="container  border-bottom pb-3">
+        <div class="row d-flex justify-content-center">
+            <h2 class="text-muted font-monospace">pillow_cw</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                    <a href="https://github.com/pogudo-e" class="btn btn-outline-secondary"><i class="fa-brands fa-github"></i> Github</a>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="fa-brands fa-telegram"></i> Telegram</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row mx-auto mt-3">
+        <div class="col d-flex justify-content-center mr-3">
+            <form class="form" action="/" method="get">
+                <div class="form-group">
+                    <label for="InputName">Имя пользователя</label>
+                    <input name="user_name" type="text" class="form-control" id="InputName" placeholder="Введите имя">
+                    <small id="emailHelp" class="form-text text-muted">Оно указано в верхней части страницы пользователя
+                        на сайта <a href="https://www.codewars.com/">codewars</a></small>
+                </div>
+                <div class="form-group">
+                    <label for="InputColor">Выберите цвет текста</label>
+                    <!--            <label for="exampleColorInput" class="form-label">Color picker</label>-->
+                    <input type="color" name="color" class="form-control form-control-color" id="InputColor"
+                           value="#D2D5D7" title="Choose your color">
+                </div>
+                <button type="submit" value="Send" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+        <div class="row border-left">
+            <div class="col">
+                <img alt="GitHub pillow stat codewars" class="mx-auto d-block" src="/src/output/canvas.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Подключение Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

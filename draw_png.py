@@ -3,10 +3,11 @@ from PIL import Image, ImageDraw, ImageFont
 
 class Draw:
     def __init__(self, user_name):
+        self.user_name = user_name
         self.handle_sub = None
         self.i_draw = None
         self.img = None
-        self.user_name = user_name
+        self.color = None
 
     def draw(self):
         self.img = Image.open('src/img/pcw.png')
@@ -17,7 +18,7 @@ class Draw:
         self.handle_sub = ImageFont.truetype('src/fonts/ubuntu_medium.ttf', size=16)  # load font for sub text
 
     def add_text(self, xy: tuple[float, float], text: str):
-        self.i_draw.text(xy=xy, text=f'{text}', font=self.handle_sub, fill='#D2D5D7')
+        self.i_draw.text(xy=xy, text=f'{text}', font=self.handle_sub, fill=self.color)
 
     def img_save(self):
         self.img.save('./src/output/canvas.png')

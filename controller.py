@@ -8,6 +8,9 @@ class Controller:
         self.user = self.parser.get_user()
         self.draw = Draw(user_name)
 
+    def items(self, color):
+        self.draw.color = color
+
     def paint(self):
         self.draw.draw()
         self.draw.add_text((113, 59), self.user.honor)

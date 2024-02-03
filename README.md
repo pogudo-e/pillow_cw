@@ -14,5 +14,5 @@
 
 ---
 
-TODO:
+[![Codewars](./text.svg)]()
 

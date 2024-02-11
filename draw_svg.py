@@ -97,9 +97,12 @@ class Draw_svg:
     def save(self):
         self.dwg.save()
 
+    def unicode_save(self):
+        return self.dwg.tostring()
+
 
 if __name__ == '__main__':
     d = Draw_svg('Pogudo')
     d.settings(font_size='18px', font_weight='bold', font_family='Ubuntu', fill='white', fill_sub_text='#8C8C8C')
     d.draw(honor='234', overall='250', total='350')
-    d.save()
+    print(d.unicode_save())

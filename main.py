@@ -1,9 +1,11 @@
+import io
 import os
 import time
 
-from fastapi import FastAPI, Form
+from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.responses import StreamingResponse
 
 from controller import Controller
 
@@ -23,18 +25,18 @@ async def favicon():
 async def preview():
     file_name = "/src/output/code.svg"
     file_path = os.path.join("src", file_name)
-    return FileResponse(path=file_path, headers={"Content-Disposition": "attachment; filename=" + file_name})
+    return FileResponse(path=file_path, headers={"Content-Disposition": "attachment; filename=" + file_name,
+                                                 "Cache-control": "no-store"})
 
 
 @app.get("/")
-def root(user_name=None, color=None):
+def root(user_name=None, theme=None):
     if user_name:
-        return user_names(user_name, color)
-    return FileResponse("static/templates/index.html")
+        return user_names(user_name, theme)
+    return FileResponse("static/templates/ceres-html-free-main/theme/dist/indexMy.html")
 
 
-def user_names(user_name: str, color=None):
-    time.sleep(2)
+def user_names(user_name, theme: str):
+    time.sleep(0)
     user = Controller(user_name)
-    user.paint_svg(color)
-    return FileResponse('./src/output/code.svg')
+    return StreamingResponse(user.paint_svg(theme), media_type="image/svg+xml")

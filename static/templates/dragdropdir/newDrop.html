@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+    <style>
+        .box {
+            background-color: lightblue;
+            box-shadow: 5px 5px 10px #000000;
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 20px auto 0 auto;
+            border-radius: 25px;
+            cursor: grab; /* Add cursor style for dragging */
+        }
+        [name="toggle"] {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button name="toggle">Animate</button>
+    <div class="box" draggable="true"></div> <!-- Add draggable attribute -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize draggable behavior
+            $(".box").on("dragstart", function (event) {
+                event.originalEvent.dataTransfer.setData("text/plain", "box"); // Set data to be transferred
+            });
+
+            // Handle drop event
+            $(".box").on("drop", function (event) {
+                event.preventDefault();
+                const data = event.originalEvent.dataTransfer.getData("text/plain");
+                if (data === "box") {
+                    // Toggle animation on drop
+                    $("[name=toggle]").trigger("click");
+                }
+            });
+
+            // Prevent default behavior for dragover event
+            $(".box").on("dragover", function (event) {
+                event.preventDefault();
+            });
+
+            // Toggle animation on button click
+            $("[name=toggle]").on("click", function () {
+                if ($('.box').width() < 125) {
+                    $(".box").animate({
+                        opacity: .3,
+                        width: "125px",
+                        height: "125px"
+                    }, 250);
+                } else {
+                    $(".box").animate({
+                        opacity: 1,
+                        width: "100px",
+                        height: "100px"
+                    }, 250);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

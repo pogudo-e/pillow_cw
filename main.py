@@ -33,7 +33,7 @@ async def preview():
 def root(user_name=None, theme=None):
     if user_name:
         return user_names(user_name, theme)
-    return FileResponse("static/templates/ceres-html-free-main/theme/dist/indexMy.html")
+    return FileResponse("static/templates/index.html")
 
 
 def user_names(user_name, theme: str):

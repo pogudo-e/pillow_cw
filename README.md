@@ -1,5 +1,5 @@
 # Виджет CodeWars
-[![Codewars](./src/output/code.svg)]()
+[![Codewars](http://127.0.0.1:8000/?user_name=Pogudo&theme=light)]()
 
 ---
 ## Цель проекта
@@ -25,3 +25,6 @@
 - Устранение ошибок
 - Изменение размеров
 ---
+
+
+

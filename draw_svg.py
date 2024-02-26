@@ -3,6 +3,9 @@ import svgwrite
 
 class Draw_svg:
     def __init__(self, user_name):
+        self.fill_user_name = '#8C8C8C'
+        self.fill_header = '#D2D5D7'
+        self.fill_rectangle = '#222327'
         self.dwg = None
         self.user_name = user_name
         self.font_family = None
@@ -19,7 +22,7 @@ class Draw_svg:
     def base_text(self):
         self.dwg = svgwrite.Drawing('./src/output/code.svg', profile='full', size=(320, self.holst()))
         self.dwg.viewbox(minx=0, miny=0, width=320, height=self.height_holst)
-        rectangle = self.dwg.rect(insert=(0, 0), size=(320, self.height_holst), rx=7, ry=7, fill='#222327')
+        rectangle = self.dwg.rect(insert=(0, 0), size=(320, self.height_holst), rx=7, ry=7, fill=self.fill_rectangle)
         self.dwg.add(rectangle)
         # logo
         path = self.dwg.path(
@@ -30,10 +33,11 @@ class Draw_svg:
         self.dwg.add(path)
         # header
         self.dwg.add(
-            self.dwg.text('CodeWars/', insert=(45, 32), fill='#D2D5D7', font_size='26px', font_weight='bold',
+            self.dwg.text('CodeWars/', insert=(45, 32), fill=self.fill_header, font_size='26px', font_weight='bold',
                           font_family='Ubuntu'))
         self.dwg.add(
-            self.dwg.text(f'{self.user_name}', insert=(185, 32), fill='#8C8C8C', font_size='26px', font_weight='bold',
+            self.dwg.text(f'{self.user_name}', insert=(185, 32), fill=self.fill_user_name, font_size='26px',
+                          font_weight='bold',
                           font_family='Ubuntu'))
 
     def draw(self, **kwargs):
@@ -52,6 +56,9 @@ class Draw_svg:
             if name == 'font_weight': self.font_weight = value
             if name == 'fill': self.fill = value
             if name == 'fill_sub_text': self.fill_sub_text = value
+            if name == 'fill_rectangle': self.fill_rectangle = value
+            if name == 'fill_header': self.fill_header = value
+            if name == 'fill_user_name': self.fill_user_name = value
 
     def honor(self, text):
         self.text_draw('15', self.base, 'Honor:', self.fill_sub_text)

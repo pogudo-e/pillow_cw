@@ -1,263 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <base href="">
     <title>Создание баннера</title>
     <meta name="description"
-        content="Ceres admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets.">
+          content="Генератор для создания svg файла со статистикой сайта codewars">
     <meta name="keywords"
-        content="Ceres theme, bootstrap, bootstrap 5, admin themes, free admin themes, bootstrap admin, bootstrap dashboard">
+          content="Ceres theme, bootstrap, bootstrap 5, admin themes, free admin themes, bootstrap admin, bootstrap dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Ceres HTML Free - Bootstrap 5 HTML Multipurpose Admin Dashboard Theme">
-    <meta property="og:url" content="https://keenthemes.com/products/ceres-html-pro">
-    <meta property="og:site_name" content="Keenthemes | Ceres HTML Free">
-    <link rel="canonical" href="Https://preview.keenthemes.com/ceres-html-free">
-    <link rel="shortcut icon" href="static/templates/assets/media/logos/favicon.ico">
-    <!--begin::Fonts-->
+    <link rel="shortcut icon" href="static/templates/assets/media/favicon.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
-    <!--end::Fonts-->
-    <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="static/templates/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="static/templates/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
-    <!--end::Global Stylesheets Bundle-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<!--end::Head-->
-<!--begin::Body-->
-
-<body id="kt_body" style="background-image: url(static/templates/assets/media/patterns/header-bg.png)"
-    class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
-    <!--begin::Main-->
-    <!--begin::Root-->
-    <div class="d-flex flex-column flex-root">
-        <!--begin::Page-->
-        <div class="page d-flex flex-row flex-column-fluid">
-            <!--begin::Wrapper-->
-            <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
-                <!--begin::Header-->
-                <!--begin::Toolbar-->
-                <div class="toolbar py-5 py-lg-15" id="kt_toolbar">
-                    <!--begin::Container-->
-                    <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack flex-wrap">
-                        <!--begin::Title-->
-                        <h3 class="text-white fw-bolder fs-2qx me-5">Pillow CodeWars</h3>
-                        <!--begin::Title-->
-                    </div>
-                    <!--end::Container-->
+<body id="kt_body"
+      style="background-image: url('static/templates/assets/media/bg.svg'); background-repeat: no-repeat; background-position: center; background-size: cover;"
+      class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+<div class="d-flex flex-column flex-root">
+    <div class="page d-flex flex-row flex-column-fluid">
+        <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+            <div class="toolbar py-5 py-lg-15" id="kt_toolbar">
+                <div id="kt_toolbar_container" class="container-xxl d-flex flex-stack flex-wrap">
+                    <h3 class="text-white fw-bolder fs-2qx me-5"><a href="/">Pillow CodeWars</a></h3>
                 </div>
-                <!--end::Toolbar-->
-                <!--begin::Container-->
-                <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
-                    <!--begin::Post-->
-                    <div class="content flex-row-fluid" id="kt_content">
-                        <!--begin::Index-->
-                        <div class="card card-page">
-                            <!--begin::Card body-->
-                            <div class="card-body">
-
-                                <!--begin::Row-->
-                                <div class="row g-5 g-xl-8">
-                                    <div class="col-xxl-12">
-                                        <div class="card card-xl-stretch mb-5 mb-xl-12">
-                                            <!--begin::Stepper-->
-                                            <div class="stepper stepper-pills" id="kt_stepper_example_basic">
-                                                <!--begin::Nav-->
-                                                <div class="stepper-nav flex-center flex-wrap mb-10">
-                                                    <!--begin::Step 1-->
-                                                    <div class="stepper-item mx-2 my-4 current"
-                                                        data-kt-stepper-element="nav">
-                                                        <!--begin::Line-->
-                                                        <div class="stepper-line w-40px"></div>
-                                                        <!--end::Line-->
-                                                        <!--begin::Icon-->
-                                                        <div class="stepper-icon w-40px h-40px">
-                                                            <i class="stepper-check fas fa-check"></i>
-                                                            <span class="stepper-number">1</span>
-                                                        </div>
-                                                        <!--end::Icon-->
-                                                        <!--begin::Label-->
-                                                        <div class="stepper-label">
-                                                            <h3 class="stepper-title">
-                                                                Шаг 1
-                                                            </h3>
-                                                            <div class="stepper-desc">
-                                                                Введите имя пользователя
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
+            </div>
+            <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
+                <div class="content flex-row-fluid" id="kt_content">
+                    <div class="card card-page">
+                        <div class="card-body">
+                            <div class="row g-5 g-xl-8">
+                                <div class="col-xxl-12">
+                                    <div class="card card-xl-stretch mb-5 mt-2 mb-xl-12">
+                                        <div class="stepper stepper-pills" id="kt_stepper_example_basic">
+                                            <div class="stepper-nav flex-center flex-wrap mb-10">
+                                                <div class="stepper-item mx-2 my-4 mt-5 current"
+                                                     data-kt-stepper-element="nav">
+                                                    <div class="stepper-line w-40px"></div>
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">1</span>
                                                     </div>
-                                                    <!--end::Step 1-->
-                                                    <!--begin::Step 2-->
-                                                    <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
-                                                        <!--begin::Line-->
-                                                        <div class="stepper-line w-40px"></div>
-                                                        <!--end::Line-->
-                                                        <!--begin::Icon-->
-                                                        <div class="stepper-icon w-40px h-40px">
-                                                            <i class="stepper-check fas fa-check"></i>
-                                                            <span class="stepper-number">2</span>
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Шаг 1
+                                                        </h3>
+                                                        <div class="stepper-desc">
+                                                            Введите имя пользователя
                                                         </div>
-                                                        <!--begin::Icon-->
-                                                        <!--begin::Label-->
-                                                        <div class="stepper-label">
-                                                            <h3 class="stepper-title">
-                                                                Шаг 2
-                                                            </h3>
-                                                            <div class="stepper-desc">
-                                                                Выберите тему
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
                                                     </div>
-                                                    <!--end::Step 2-->
-                                
-                                                    <!--begin::Step 4-->
-                                                    <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
-                                                        <!--begin::Line-->
-                                                        <div class="stepper-line w-40px"></div>
-                                                        <!--end::Line-->
-                                                        <!--begin::Icon-->
-                                                        <div class="stepper-icon w-40px h-40px">
-                                                            <i class="stepper-check fas fa-check"></i>
-                                                            <span class="stepper-number">3</span>
-                                                        </div>
-                                                        <!--begin::Icon-->
-                                                        <!--begin::Label-->
-                                                        <div class="stepper-label">
-                                                            <h3 class="stepper-title">
-                                                                Готово
-                                                            </h3>
-                                                            <div class="stepper-desc">
-                                                                Получение кода
-                                                            </div>
-                                                        </div>
-                                                        <!--end::Label-->
-                                                    </div>
-                                                    <!--end::Step 4-->
                                                 </div>
-                                                <!--end::Nav-->
-                                                <!--begin::Form-->
-                                                <div class="mx-auto col-lg-6" id="name-alert"></div>
-
-                                                <form class="form w-lg-500px mx-auto" novalidate="novalidate"
-                                                    id="kt_stepper_example_basic_form">
-                                                    <!--begin::Group-->
-                                                    <div class="mb-5">
-                                                        <!--begin::Step 1-->
-                                                        <form id="formSetUser">
-                                                            <div class="flex-column current"
-                                                                data-kt-stepper-element="content">
-                                                                <!--begin::Input group-->
-                                                                <div class="fv-row mb-10">
-                                                                    <!--begin::Label-->
-                                                                    <label class="required form-label">Введите имя
-                                                                        пользователя</label>
-                                                                    <!--end::Label-->
-                                                                    <!--begin::Input-->
-                                                                    <input type="text"
-                                                                        class="form-control form-control-solid"
-                                                                        name="input1" placeholder="" value=""
-                                                                        id="set_name">
-                                                                    <!--end::Input-->
-                                                                </div>
-                                                                <button type="button" id="name_btn"
-                                                                    class="btn btn-primary">
-                                                                    Дальше
-                                                                </button>
-                                                                <!--end::Input group-->
-                                                            </div>
-                                                        </form>
-                                                        <!--begin::Step 1-->
-                                                        <!--begin::Step 2-->
-                                                        <div class="flex-column" data-kt-stepper-element="content">
-                                                            <div class="row g-5">
-                                                                <div class="col-lg-6">
-                                                                    <div class="card shadow-sm">
-                                                                        <div class="card-body p-2">
-                                                                            <div class="card cursor-pointer	"
-                                                                                onclick="set_theme('default')">
-                                                                                <img class="mw-100 mh-400px card-rounded-bottom "
-                                                                                    alt=""
-                                                                                    src="http://127.0.0.1:8000/?user_name=Pogudo&theme=default" />
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-6">
-                                                                    <div class="card shadow-sm">
-                                                                        <div class="card-body p-2">
-                                                                            <div class="card cursor-pointer	"
-                                                                                onclick="set_theme('light')">
-
-                                                                                <img class="mw-100 mh-400px card-rounded-bottom "
-                                                                                    alt=""
-                                                                                    src="http://127.0.0.1:8000/?user_name=Pogudo&theme=light" />
-
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <!--begin::Step 1-->
-                                                        
-                                                        <!--begin::Step 3-->
-                                                        <div class="flex-column" data-kt-stepper-element="content">
-                                                            <!--begin::Input group-->
-                                                                <div class="col-xxl-12">
-                                                                    <div class="card card-xl-stretch mb-5 mb-xl-8" id="pasteImage">
-
-                                                                    </div>
-                                                                <div class="col-xxl-12">
-                                                                    <div class="card card-xl-stretch mb-5 mb-xl-8">
-                                                                        <div class="card-body">
-                                                                            <div class="input-group">
-                                                                                <input id="kt_clipboard" type="text"
-                                                                                    class="form-control form-control-solid"
-                                                                                    placeholder="" value="">
-                                                                                <button type="button" class="btn btn-bg-secondary btn-active-primary"
-                                                                                    data-clipboard-target="#kt_clipboard">
-                                                                                    Скопировать
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--begin::Step 3-->
+                                                <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                    <div class="stepper-line w-40px"></div>
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">2</span>
                                                     </div>
-                                                </form>
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Шаг 2
+                                                        </h3>
+                                                        <div class="stepper-desc">
+                                                            Выберите тему
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="stepper-item mx-2 my-4" data-kt-stepper-element="nav">
+                                                    <div class="stepper-line w-40px"></div>
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">3</span>
+                                                    </div>
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Готово
+                                                        </h3>
+                                                        <div class="stepper-desc">
+                                                            Получение кода
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <!--end::Stepper-->
+                                            <div class="mx-auto col-lg-6" id="name-alert"></div>
+                                            <form class="form w-lg-500px mx-auto" novalidate="novalidate"
+                                                  id="kt_stepper_example_basic_form">
+                                                <div class="mb-5">
+                                                    <form id="formSetUser">
+                                                        <div class="flex-column current"
+                                                             data-kt-stepper-element="content">
+                                                            <div class="fv-row mb-10">
+                                                                <label class="required form-label">Введите имя
+                                                                    пользователя</label>
+                                                                <input type="text"
+                                                                       class="form-control form-control-solid"
+                                                                       name="input1" placeholder="" value=""
+                                                                       id="set_name">
+                                                            </div>
+                                                            <button type="button" id="name_btn"
+                                                                    class="btn btn-primary">
+                                                                Дальше
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="flex-column" data-kt-stepper-element="content">
+                                                        <div class="row g-5">
+                                                            <div class="col-lg-6">
+                                                                <div class="card shadow-sm">
+                                                                    <div class="card-body p-2">
+                                                                        <div class="card cursor-pointer	"
+                                                                             onclick="set_theme('default')">
+                                                                            <img class="mw-100 mh-400px card-rounded-bottom "
+                                                                                 alt=""
+                                                                                 src="static/templates/assets/media/theme_dark.svg"/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="card shadow-sm">
+                                                                    <div class="card-body p-2">
+                                                                        <div class="card cursor-pointer	"
+                                                                             onclick="set_theme('light')">
+                                                                            <img class="mw-100 mh-400px card-rounded-bottom "
+                                                                                 alt=""
+                                                                                 src="static/templates/assets/media/theme_light.svg"/>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-column" data-kt-stepper-element="content">
+                                                        <div class="col-xxl-12">
+                                                            <div class="card card-xl-stretch mb-5 mb-xl-8"
+                                                                 id="pasteImage">
+                                                            </div>
+                                                            <div class="col-xxl-12">
+                                                                <div class="card card-xl-stretch mb-5 mb-xl-8">
+                                                                    <div class="card-body">
+                                                                        <div class="input-group">
+                                                                            <input id="kt_clipboard" type="text"
+                                                                                   class="form-control form-control-solid"
+                                                                                   placeholder="" value="">
+                                                                            <button type="button"
+                                                                                    class="btn btn-bg-secondary btn-active-primary"
+                                                                                    data-clipboard-target="#kt_clipboard">
+                                                                                Скопировать
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!--end::Row-->
                             </div>
-                            <!--end::Card body-->
                         </div>
-                        <!--end::Index-->
                     </div>
-                    <!--end::Post-->
                 </div>
-                <!--end::Container-->
             </div>
-            <!--end::Wrapper-->
         </div>
-        <!--end::Page-->
     </div>
-    <!--begin::Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
-
-    <script src="static/templates/assets/plugins/global/plugins.bundle.js"></script>
-    <script src="static/templates/assets/js/scripts.bundle.js"></script>
-    <script src="static/templates/assets/js/custom/my.js"></script>
-    <!--end::Javascript-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+<script src="static/templates/assets/plugins/global/plugins.bundle.js"></script>
+<script src="static/templates/assets/js/scripts.bundle.js"></script>
+<script src="static/templates/assets/js/my.js"></script>
 </body>
 </html>

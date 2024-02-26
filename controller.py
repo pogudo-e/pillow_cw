@@ -33,8 +33,11 @@ class Controller:
         self.draw_svg.settings(font_size='18px',
                                font_weight='bold',
                                font_family='Ubuntu',
-                               fill=f'#FFF',
-                               fill_sub_text='#FFF')
+                               fill=f'#686868',
+                               fill_sub_text='#4F4F4F',
+                               fill_rectangle='#FFFEFE',
+                               fill_header='#828282',
+                               fill_user_name='#4F4F4F')
 
     def theme_set(self, theme):
         self.theme = theme

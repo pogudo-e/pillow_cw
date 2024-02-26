@@ -37317,6 +37317,7 @@ a:hover {
 
 .btn {
   outline: none !important;
+  background-color: #bde0fe;
 }
 .btn:not(.btn-shadow):not(.shadow):not(.shadow-sm):not(.shadow-lg) {
   box-shadow: none !important;
@@ -37521,8 +37522,8 @@ a:hover {
 
 .btn.btn-primary {
   color: #FFFFFF;
-  border-color: #009EF7;
-  background-color: #009EF7;
+  border-color: #219ebc;
+  background-color: #219ebc;
 }
 .btn.btn-primary i {
   color: #FFFFFF;
@@ -37539,8 +37540,8 @@ a:hover {
 }
 .btn-check:checked + .btn.btn-primary, .btn-check:active + .btn.btn-primary, .btn.btn-primary:focus:not(.btn-active), .btn.btn-primary:hover:not(.btn-active), .btn.btn-primary:active:not(.btn-active), .btn.btn-primary.active, .btn.btn-primary.show, .show > .btn.btn-primary {
   color: #FFFFFF;
-  border-color: #0095E8;
-  background-color: #0095E8 !important;
+  border-color: #264653;
+  background-color: #264653 !important;
 }
 .btn-check:checked + .btn.btn-primary i, .btn-check:active + .btn.btn-primary i, .btn.btn-primary:focus:not(.btn-active) i, .btn.btn-primary:hover:not(.btn-active) i, .btn.btn-primary:active:not(.btn-active) i, .btn.btn-primary.active i, .btn.btn-primary.show i, .show > .btn.btn-primary i {
   color: #FFFFFF;
@@ -37599,8 +37600,8 @@ a:hover {
 }
 .btn-check:checked + .btn.btn-active-primary, .btn-check:active + .btn.btn-active-primary, .btn.btn-active-primary:focus:not(.btn-active), .btn.btn-active-primary:hover:not(.btn-active), .btn.btn-active-primary:active:not(.btn-active), .btn.btn-active-primary.active, .btn.btn-active-primary.show, .show > .btn.btn-active-primary {
   color: #FFFFFF;
-  border-color: #009EF7;
-  background-color: #009EF7 !important;
+  border-color: #a2d2ff;
+  background-color: #a2d2ff !important;
 }
 .btn-check:checked + .btn.btn-active-primary i, .btn-check:active + .btn.btn-active-primary i, .btn.btn-active-primary:focus:not(.btn-active) i, .btn.btn-active-primary:hover:not(.btn-active) i, .btn.btn-active-primary:active:not(.btn-active) i, .btn.btn-active-primary.active i, .btn.btn-active-primary.show i, .show > .btn.btn-active-primary i {
   color: #FFFFFF;
@@ -46318,7 +46319,7 @@ div:hover::-webkit-scrollbar-thumb {
   width: 40px;
   height: 40px;
   border-radius: 0.475rem;
-  background-color: #F1FAFF;
+  background-color: #ffc8dd;
   margin-right: 1.5rem;
 }
 .stepper.stepper-pills .stepper-item .stepper-icon .stepper-check {
@@ -46327,7 +46328,7 @@ div:hover::-webkit-scrollbar-thumb {
 }
 .stepper.stepper-pills .stepper-item .stepper-icon .stepper-number {
   font-weight: 600;
-  color: #009EF7 !important;
+  color: #ffafcc !important;
   font-size: 1.25rem;
 }
 .stepper.stepper-pills .stepper-item .stepper-label {
@@ -46336,23 +46337,23 @@ div:hover::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 .stepper.stepper-pills .stepper-item .stepper-label .stepper-title {
-  color: #3F4254;
+  color: #023047;
   font-weight: 600;
   font-size: 1.25rem;
   margin-bottom: 0.3rem;
 }
 .stepper.stepper-pills .stepper-item .stepper-label .stepper-desc {
-  color: #A1A5B7;
+  color: #023047;
 }
 .stepper.stepper-pills .stepper-item.current {
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #009EF7;
+  background-color: #ffafcc;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon .stepper-check {
-  color: #009EF7;
+  color: #ffafcc;
   display: none;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-icon .stepper-number {
@@ -46360,17 +46361,17 @@ div:hover::-webkit-scrollbar-thumb {
   font-size: 1.35rem;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-label .stepper-title {
-  color: #7E8299;
+  color: #264653;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-label .stepper-desc {
   color: #B5B5C3;
 }
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-icon, .stepper.stepper-pills .stepper-item.completed .stepper-icon {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: #F1FAFF;
+  background-color: #ffc8dd;
 }
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-icon .stepper-check, .stepper.stepper-pills .stepper-item.completed .stepper-icon .stepper-check {
-  color: #009EF7 !important;
+  color: #ffafcc !important;
   display: inline-block;
 }
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-icon .stepper-number, .stepper.stepper-pills .stepper-item.completed .stepper-icon .stepper-number {
@@ -46380,7 +46381,7 @@ div:hover::-webkit-scrollbar-thumb {
   color: #A1A5B7;
 }
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-label .stepper-desc, .stepper.stepper-pills .stepper-item.completed .stepper-label .stepper-desc {
-  color: #B5B5C3;
+  color: #264653;
 }
 .stepper.stepper-pills.stepper-column .stepper-nav {
   flex-direction: column;
@@ -46749,7 +46750,6 @@ body {
   background-color: #EBECEE;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 350px;
 }
 body.page-bg-image-lg {
   background-size: 100% 530px;
@@ -46795,9 +46795,6 @@ body.page-bg-image-lg {
   }
 }
 @media (max-width: 991.98px) {
-  body {
-    background-size: 100% 300px;
-  }
   body.page-bg-image-lg {
     background-size: 100% 450px;
   }

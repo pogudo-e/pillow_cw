@@ -1,5 +1,5 @@
 # Виджет CodeWars
-[![Codewars](http://127.0.0.1:8000/?user_name=Pogudo&theme=light)]()
+[![Codewars](https://c686b864-254a-48ad-adda-751b97b45c0c-00-241mot1h3o2eg.janeway.replit.dev/?user_name=Pogudo&theme=light)](https://github.com/pogudo-e/pillow_cw)
 
 ---
 ## Цель проекта
